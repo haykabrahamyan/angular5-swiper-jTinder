@@ -14,30 +14,30 @@ $(function () {
         $('.swiper-wrapper, .cart, .swiper-pagination, .tabs, .chat-item').hide();
     });
 
-    var settings = {
-      direction: 'vertical',
-      loop: true,
-      slidesPerView: 1,
-      slidesPerGroup: 1,
-      // loopedSlides: 4,
-        breakpoints: {
-              767: {
-                  mode: 'vertical',
-                  spaceBetween: 0,
-                  mousewheel: true,
-                pagination: {
-                  el: '.swiper-pagination',
-                  clickable: true
-                }
-              }
-          },
-
-      reInit: true
-
-    };
-
-    var swiper = new Swiper('.swiper-container', settings);
-    var swiper = document.querySelector('.swiper-container').swiper;
+    // var settings = {
+    //   direction: 'vertical',
+    //   loop: true,
+    //   slidesPerView: 1,
+    //   slidesPerGroup: 1,
+    //   // loopedSlides: 4,
+    //     breakpoints: {
+    //           767: {
+    //               mode: 'vertical',
+    //               spaceBetween: 0,
+    //               mousewheel: true,
+    //             pagination: {
+    //               el: '.swiper-pagination',
+    //               clickable: true
+    //             }
+    //           }
+    //       },
+    //
+    //   reInit: true
+    //
+    // };
+    //
+    // var swiper = new Swiper('.swiper-container', settings);
+    // var swiper = document.querySelector('.swiper-container').swiper;
 
 
     $("#tinderslide").jTinder({

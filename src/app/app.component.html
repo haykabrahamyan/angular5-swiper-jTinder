@@ -1,4 +1,4 @@
-<div class="wraper">
+<div class="wraper" fxLayout="column">
 
 
   <div class="menu">
@@ -61,14 +61,13 @@
     <ul>
       <li class="pane1">
         <div class="img">
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="assets/img/b1.jpg" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/b2.jpg" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/b3.jpg" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/b4.jpg" alt=""></div>
+          <swiper *ngIf="type == 'component' && show" class="swiper-container" [config]="config" [disabled]="disabled" (indexChange)="onIndexChange($event)" fxFlex="auto">
+            <div *ngFor="let slide of slides" class="swiper-slide">
+              <div fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
+                <img src="assets/img/{{slide}}" alt="">
+              </div>
             </div>
-          </div>
+          </swiper>
           <!--<div class="swiper-pagination"></div>-->
         </div>
         <div>
@@ -85,15 +84,13 @@
       </li>
       <li class="pane2">
         <div class="img">
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="assets/img/a1.jpg" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/b2.jpg" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/b1.jpg" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/a4.jpg" alt=""></div>
+          <swiper *ngIf="type == 'component' && show" class="swiper-container" [config]="config" [disabled]="disabled" (indexChange)="onIndexChange($event)" fxFlex="auto">
+            <div *ngFor="let slide of slides" class="swiper-slide">
+              <div fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
+                <img src="assets/img/{{slide}}" alt="">
+              </div>
             </div>
-          </div>
-          <!--<div class="swiper-pagination"></div>-->
+          </swiper>
         </div>
         <div>
           <div class="cart">
@@ -109,15 +106,13 @@
       </li>
       <li class="pane3">
         <div class="img">
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="assets/img/b1.jpg" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/a2.jpg" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/a3.jpg" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/b4.jpg" alt=""></div>
+          <swiper *ngIf="type == 'component' && show" class="swiper-container" [config]="config" [disabled]="disabled" (indexChange)="onIndexChange($event)" fxFlex="auto">
+            <div *ngFor="let slide of slides" class="swiper-slide">
+              <div fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
+                <img src="assets/img/{{slide}}" alt="">
+              </div>
             </div>
-          </div>
-          <!--<div class="swiper-pagination"></div>-->
+          </swiper>
         </div>
         <div>
           <div class="cart">
@@ -133,15 +128,13 @@
       </li>
       <li class="pane4">
         <div class="img">
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="assets/img/a3.jpg" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/a2.jpg" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/b3.jpg" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/b4.jpg" alt=""></div>
+          <swiper *ngIf="type == 'component' && show" class="swiper-container" [config]="config" [disabled]="disabled" (indexChange)="onIndexChange($event)" fxFlex="auto">
+            <div *ngFor="let slide of slides" class="swiper-slide">
+              <div fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
+                <img src="assets/img/{{slide}}" alt="">
+              </div>
             </div>
-          </div>
-          <!--<div class="swiper-pagination"></div>-->
+          </swiper>
         </div>
         <div>
           <div class="cart">
@@ -157,15 +150,13 @@
       </li>
       <li class="pane5">
         <div class="img">
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="assets/img/b2.jpg" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/a4.jpg" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/b3.jpg" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/a1.jpg" alt=""></div>
+          <swiper *ngIf="type == 'component' && show" class="swiper-container" [config]="config" [disabled]="disabled" (indexChange)="onIndexChange($event)" fxFlex="auto">
+            <div *ngFor="let slide of slides" class="swiper-slide">
+              <div fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
+                <img src="assets/img/{{slide}}" alt="">
+              </div>
             </div>
-          </div>
-          <!--<div class="swiper-pagination"></div>-->
+          </swiper>
         </div>
         <div>
           <div class="cart">
@@ -181,7 +172,5 @@
       </li>
     </ul>
   </div>
-  <div class="swiper-pagination"></div>
-
   <!--</div>-->
 </div>
