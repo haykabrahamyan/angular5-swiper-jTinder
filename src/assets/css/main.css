@@ -10,14 +10,15 @@ body {
     margin: 0;
     padding: 0;
 }
-.wraper{
-  position: relative;
-  width: 100% !important;
-  height: calc(100vh - 66px);
-  margin: 66px auto 0;
+
+.wraper {
+    position: relative;
+    width: 100% !important;
+    height: calc(100vh - 66px);
+    margin: 66px auto 0;
 }
 
-.swiper-container,.wraper {
+.swiper-container, .wraper {
     width: 100%;
     height: 100%;
     margin-left: auto;
@@ -47,9 +48,9 @@ body {
 }
 
 /*custom*/
-.swiper-container-vertical > .swiper-pagination-bullets {
+.swiper-pagination {
     left: 4%;
-    top: 21%;
+    top: 2%;
     right: unset;
 }
 
@@ -59,7 +60,8 @@ body {
     float: left;
 
 }
-.list-group{
+
+.list-group {
     position: relative;
     width: 100%;
 }
@@ -135,18 +137,18 @@ body {
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
     background: transparent;
 }
-/*swiper-wrapper{margin-top: 66px;}*/
+
 .swiper-wrapper img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
 }
-/*.cards{margin-top: 66px;}*/
+
 .cart {
     position: absolute;
     z-index: 10;
-    top: 84%;
+    bottom: 10%;
     width: 315px;
     height: 90px;
     left: 50%;
@@ -160,7 +162,7 @@ body {
     border-radius: 7px;
     position: relative;
     left: -50%;
-  bottom: 50%;
+    bottom: 50%;
     padding: 3px 10px;
     box-sizing: border-box;
 }
@@ -198,7 +200,7 @@ body {
 
 .list-group ul li a {
     padding: 20px 70px;
-    border-bottom: 1px solid #ececec;
+    border-bottom: 2px solid #ececec;
     color: #9b9b9b;
     font-size: 24px;
     text-align: left;
@@ -237,22 +239,32 @@ body {
     display: inline-block;
 
 }
-.tabs li:nth-child(1) a{
-    font-size:14px;
-    color:#6f6f6f;
-    text-align:center;
+
+.tabs li:nth-child(1) a {
+    font-size: 14px;
+    color: #6f6f6f;
+    text-align: center;
 }
-.tabs li:nth-child(2) a{
+a{
+    text-decoration: none;
+}
+.list-group-item {
+    position: relative;
+    display: block;
+    margin-bottom: -1px;
+    background-color: #fff;
+}
+.tabs li:nth-child(2) a {
     font-size: 14px;
     color: #ffffff;
     text-align: center;
 }
 
-.chat-item img{
+.chat-item img {
     padding: 20px 15px 0 0;
 }
 
-.badge.badge-pill.badge-info{
+.badge.badge-pill.badge-info {
     position: absolute;
     right: 8px;
     bottom: 35px;
@@ -263,4 +275,6 @@ body {
     color: #ffffff;
     letter-spacing: 0;
     text-align: left;
+    font-weight: 700;
+    line-height: 1;
 }

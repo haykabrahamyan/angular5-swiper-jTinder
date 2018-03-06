@@ -285,6 +285,8 @@
     width: 9px;
     height: 9px;
     border-radius: 100%;
+    margin: 6px 0;
+    display: block;
 }
 
 button.swiper-pagination-bullet {
