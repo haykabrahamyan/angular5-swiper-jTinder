@@ -48,11 +48,7 @@ body {
 }
 
 /*custom*/
-.swiper-pagination {
-    left: 4%;
-    top: 2%;
-    right: unset;
-}
+
 
 .mini-submenu {
     border-radius: 4px;
@@ -60,6 +56,14 @@ body {
     float: left;
 
 }
+
+.swiper-pagination-handle{
+  padding: 0 0 !important;
+  line-height: 12px;
+
+}
+
+
 
 .list-group {
     position: relative;
